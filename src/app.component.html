@@ -1,0 +1,18 @@
+<select id="dino-select" #dino (change)="(dino.value)">
+  <optgroup label="Theropods">
+    <option
+      *ngFor="let val of set1"
+      [attr.data-analytics-component-name]="val === dino.value ? val : null"
+    >
+      {{ val }}
+    </option>
+  </optgroup>
+  <optgroup label="Sauropods">
+    <option
+      *ngFor="let val of set2"
+      [attr.data-analytics-component-name]="val === dino.value ? val : null"
+    >
+      {{ val }}
+    </option>
+  </optgroup>
+</select>
