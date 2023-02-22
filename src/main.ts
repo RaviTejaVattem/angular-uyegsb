@@ -13,11 +13,9 @@ export class App {
   selectedVal = null;
   name = 'Angular';
   set1 = ['Tyrannosaurus', 'Velociraptor', 'Deinonychus'];
-  set2 = ['Diplodocus', 'Saltasaurus', 'Apatosaurus']
+  set2 = ['Diplodocus', 'Saltasaurus', 'Apatosaurus'];
   logChange(event: any) {
     console.log(event);
-    // console.log(event.target.value);
-    // this.selectedVal = event.target.value;
   }
 }
 
