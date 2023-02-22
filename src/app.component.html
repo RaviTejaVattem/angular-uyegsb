@@ -2,7 +2,7 @@
   <optgroup label="Theropods">
     <option
       *ngFor="let val of set1"
-      [attr.data-analytics-component-name]="val === dino.value ? val : null"
+      [attr.custom-attribute]="val === dino.value ? val : null"
     >
       {{ val }}
     </option>
@@ -10,7 +10,7 @@
   <optgroup label="Sauropods">
     <option
       *ngFor="let val of set2"
-      [attr.data-analytics-component-name]="val === dino.value ? val : null"
+      [attr.custom-attribute]="val === dino.value ? val : null"
     >
       {{ val }}
     </option>
